@@ -21,11 +21,11 @@ extension Animation {
         let curveQuantity = DataStore.shared.curves.count
         
         
-        let iterationCount = min(animationQuantity, curveQuantity)
+        let optionCount = min(animationQuantity, curveQuantity)
         
         
-        let randomAnimationName = DataStore.shared.animations[Int.random(in: 0...iterationCount)]
-        let randomAnimationCurve = DataStore.shared.curves[Int.random(in: 0...iterationCount)]
+        let randomAnimationName = DataStore.shared.animations[Int.random(in: 0...optionCount)]
+        let randomAnimationCurve = DataStore.shared.curves[Int.random(in: 0...optionCount)]
         let randomAnimationForce = floor(CGFloat.random(in: 1...5))
         let randomAnimationDuration = floor(CGFloat.random(in: 1...5))
         let randomAnimationDelay = floor(CGFloat.random(in: 1...5))
